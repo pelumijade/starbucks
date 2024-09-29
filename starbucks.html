@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: #3c8067;
+            height: 475px;
+            width: 100%;
+        }
+        .wrapper-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            margin-bottom: 30px;
+        }
+        .wrapper-3{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        .wrapper-4{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 100%;
+            margin-top: 50px;
+            background: rgb(1,98,65);
+            margin-bottom: 20px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 30px;
+            height: 420px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .newOptions{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width:100%;
+            height: 200px;
+        }
+        .secondHero{
+            pointer-events: none;
+            background-image: url("image/selfieCoffee.jpg"); /* The image used */
+            height: 500px; /* You must set a specified height */
+            width: 40%;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+        .option{
+            width:300px;
+            height: 200px;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            height: 50px;
+            color: #3c8067;
+            background: white;
+            
+        }
+        .title-text{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        .discount{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            height: 50px;
+            color: white;
+            background: black;
+        }
+        .coupon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-basis: 60%;
+        }
+        .coupon-image{
+            width: 500px;
+        }
+        .coupon-text{
+            width: 500px;
+            text-align: center;
+            font-size: 14px;
+            padding: 25px;
+        }
+        .coupon-button{
+            background: rgb(0, 0, 0);
+            color: whitesmoke;
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: 0.8s ease;
+        }
+        .contest-btn{
+            width: 150px;
+            height: 40px;
+            color: whitesmoke;
+            background-color: rgba(60,128,103, 0);
+            border: solid 2px whitesmoke;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        .contest-btn:hover{
+            background-color: rgba(212, 212, 212, 0.3);
+        }
+        .coupon-button:hover{
+            background: rgb(59, 59, 59);
+        }
+        .hero{
+            width: 600px;
+        }
+        .hero-image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        .option-image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            width:150px;
+        }
+        .bags{
+            pointer-events: none;
+            background-image: url("image/bags.jpg"); /* The image used */
+            height: 400px; /* You must set a specified height */
+            width: 40%;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+        .bags-text{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #2b6650;
+            width: 60%;
+            height: 100%;
+            padding: 50px;
+        }
+        .newDescription{
+            text-align: center;
+        }
+        .wrapper-4 h1{
+            color: whitesmoke;
+            font-size: 50px;
+        }
+        .wrapper-4 p{
+            text-align: center;
+            padding: 20px;
+            color: whitesmoke;
+            font-size: 25px;
+        }
+        .footer-header{
+            color: black;
+            font-size: 25px;
+        }
+        .row{
+            margin: 20px;
+            width: 20%;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            font-size: 17px;
+            text-align: center;
+            margin: 20px;
+        }
+        li a{
+            text-decoration: none;
+            color: rgb(61, 61, 61);
+        }
+        li a:hover{
+            color: rgb(1,98,65);
+        }
+    </style>
+</head>
+<body>
+    <div class="discount">
+        <p class="discount-text">Get $25 off your first order</p>
+    </div>
+    <div class="title">
+        <!--<p class="title-text">Starbucks</p>-->
+        <p><img style="pointer-events: none; height: 30px;" src="image/starbuckText.png"></p>
+    </div>
+    <div class="wrapper">
+        <div class="coupon">
+            <p><img style="pointer-events: none;" class="coupon-image" src="image/starbucksWhite.png"></p>
+            <p class="coupon-text">Join Starbucks Rewards to earn Stars for free food and drinks, any way you pay. Get access to mobile ordering, a birthday Reward, and more.</p>
+            <button class="coupon-button">Join</button>
+        </div>
+        <div class="hero">
+            <img style="pointer-events: none;" class="hero-image" src="image/starbucks.png" >
+        </div>
+    </div>
+    <div class="wrapper-2">
+        <div class="announce" style="padding: 20px;">
+            <p style="text-align:center; font-size: 30px;padding: 10px;">What's New?</p>
+        </div>
+        <div class="newOptions">
+            <div class="option">
+                <img style="pointer-events: none;" class="option-image" src="image/brownStarBucks.png" >
+                <p style="text-align: center; padding: 10px"><strong><i>Earthy Oak</i></strong></p>
+                <p class="newDescription">An aroma of fresh earth, wet soil, and sometimes refers to the presence of different types of mould.</p>
+            </div>
+            <div class="option">
+                <img style="pointer-events: none;" class="option-image" src="image/normalStarBucks.png" >
+                <p style="text-align: center; padding: 10px"><strong><i>Malt Oak</i></strong></p>
+                <p class="newDescription">Exactly as it sounds, a sweet flavour or aroma that resembles chocolate.</p>
+            </div>
+            <div class="option">
+                <img style="pointer-events: none;" class="option-image" src="image/pinkStarBucks.png" >
+                <p style="text-align: center; padding: 10px"><strong><i>Berry Oak</i></strong></p>
+                <p class="newDescription">An aroma of fresh flowers, often found in coffees with a fruity or herbal flavour profile.</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-3">
+        <div class="secondHero">
+
+        </div>
+        <div class="hero-section">
+            <p style="text-align: center; font-size: 50px; padding: 20px; color:whitesmoke">Summer's brightest new drinks</p>
+            <p style="text-align: center; font-size: 25px; margin: 30px 0px; color:whitesmoke">Introducing the Pineapple Passionfruit Starbucks Refreshers® beverage and the Starbucks® Paradise Drink with creamy coconutmilk.</p>
+            <a href="#"><button class="contest-btn">Join The Contest</button></a>
+        </div>
+    </div>
+    <div class="wrapper-4">
+        <div class="bags-text">
+            <h1>The art of the roast</h1>
+                <p>With a new roast spectrum front and center on our coffee bags, it's easier than ever to find a taste you love.</p>
+                <a href="#"><button class="contest-btn">Order now</button></a>
+            </div>
+        <div class="bags">
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <ul>
+                <li class="footer-header"><strong>About Us</strong></li>
+                <hr />
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Our Coffee</a></li>
+                <li><a href="#">Stories and News</a></li>
+                <li><a href="#">Starbucks Archive</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Customer Service</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <ul>
+                <li class="footer-header"><strong>Careers</strong></li>
+                <hr />
+                <li><a href="#">Culture and Values</a></li>
+                <li><a href="#">Inclusion, Diversity, and Equity</a></li>
+                <li><a href="#">College Achievement Plan</a></li>
+                <li><a href="#">Alumni Community</a></li>
+                <li><a href="#">U.S. Careers</a></li>
+                <li><a href="#">International Careers</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <ul>
+                <li class="footer-header"><strong>Social Impact</strong></li>
+                <hr />
+                <li><a href="#">People</a></li>
+                <li><a href="#">Planet</a></li>
+                <li><a href="#">Environmental and Social Impact Reporting</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <ul>
+                <li class="footer-header"><strong>Partners</strong></li>
+                <hr />
+                <li><a href="#">Landlord Support Center</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Corporate Gift Card Sales</a></li>
+                <li><a href="#">Office and Foodservice Coffee</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
